@@ -12,7 +12,7 @@ Note the space in between first and last names.
 You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
-  // Solution code here...
+  return people.map(({ firstName, lastName}) => (firstName + ' ' + lastName));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -23,7 +23,8 @@ Write a function named addValues that, given an array of numbers as input, uses 
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr) => {
-  // Solution code here...
+  const initialValue = 0;
+  return arr.reduce((previousValue, currentValue) => previousValue + currentValue, initialValue);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -39,7 +40,7 @@ Write a function named addPurchases that, given an array of objects as input, us
 ------------------------------------------------------------------------------------------------ */
 
 const addPurchases = (arr) => {
-  // Solution code here...
+  return arr.reduce((previousValue, currentValue) => previousValue + currentValue.purchasePrice, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -51,7 +52,9 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
+  let x = 0;
+  arr.reduce(() => x++, 0);
+  return x;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -111,7 +114,9 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  // Solution code here...
+  let newArr = [];
+  arr.reduce((previousValue, currentValue) => newArr.push(currentValue.name), 0);
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -123,7 +128,10 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  let newArr = str.split('');
+  let altArr = [];
+  newArr.reduceRight((previousValue, currentValue) => altArr.push(currentValue), 0);
+  return altArr.join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
