@@ -82,7 +82,6 @@ const grandTotal = (stores) => {
   let grandArr = [0,0,0,0,0,0,0,0,0,0,0,0];
   stores.forEach(x => x.forEach((y,i) => grandArr[i] = grandArr[i]+y));
   return grandArr;
-
 };
 
 /* ------------------------------------------------------------------------------------------------
