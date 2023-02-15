@@ -35,5 +35,6 @@ To run your tests
 - [PseudoQueue](python/docs/stack_queue_pseudo/README.md)
 - [Animal Shelter](python/docs/stack_queue_animal_shelter/README.md)
 - [Brackets](python/docs/stack_queue_brackets/README.md)
+- [Trees](python/docs/trees/README.md)
 
 
